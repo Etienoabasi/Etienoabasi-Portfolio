@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Mail, Download } from "lucide-react";
 import profilePhoto from "/uploads/149a7b09-1310-4f34-90b5-e1590136ca1a.png";
+import resumePdf from "@/assets/Etienoabasi_Asanga_Resume.pdf";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -52,13 +53,12 @@ const Hero = () => {
             <Mail className="w-4 h-4" />
             Contact Me
           </Button>
-          <Button
-            size="sm"
-            className="hover-scale"
-          >
+          <a href={resumePdf} download>
+           <Button size="sm" className="hover-scale">
             <Download className="w-4 h-4" />
             Download Resume
-          </Button>
+           </Button>
+          </a>
         </div>
 
         <div className="flex justify-center gap-6">
